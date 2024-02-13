@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeStackAcademy Notes</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link href="../src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <!-- Optional: Add the Inter font family (tailwind) for more: https://tailwindui.com/documentation -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/My-Documents-icon.png"
+    />
+  </head>
+  <body class="bg-slate-900 text-gray-100 mb-20">
+
+
+ 
+    <div class="flex justify-center mt-20">
+        <input id="nameInput" class="text-black border-2 border-gray-300 rounded-lg p-2 mr-2" type="text" placeholder="Enter a name" />
+        <button onclick="addName()" id="addNameBtn" class="bg-slate-500 text-white p-2 rounded-lg">Add Name</button>
+    </div>
+    
+    <div class="nameList mt-5 mx-auto w-full max-w-md text-center" id="nameList">
+        <!-- Names will be listed here -->
+    </div>
+    
+    <div class="max-w-56 m-auto justify-center">
+        <div class="flex flex-col mt-20 bg-orange-700 p-3">
+            <label for="peoplePerGroupSlider">People per group: <span id="sliderValue"></span></label>
+            <input id="peoplePerGroupSlider" type="range" min="2" value="2" class="slider my-1">
+            <button onclick="generateGroups()" id="generateGroupsBtn" class="bg-blue-500 text-white p-2 rounded-lg mt-4">Generate Groups</button>
+
+        </div>
+        
+
+    </div>
+    
+    <div class="groupList mt-5 mx-auto w-full max-w-md text-center" id="groupList">
+        <!-- Groups will be listed here -->
+    </div>
+    
+
+
+    <script src="./scripts/app.js"></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
