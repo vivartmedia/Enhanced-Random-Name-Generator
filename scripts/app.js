@@ -1,4 +1,3 @@
-// Imports functions for interacting with localStorage; however, these specific imports are not used in the provided code.
 
 let names = loadNames(); // Loads the existing names from localStorage when the script runs.
 
